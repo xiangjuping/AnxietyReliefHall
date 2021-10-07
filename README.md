@@ -16,18 +16,3 @@
 + [写信模块]：信件的书写、上传
 + [文章阅读模块]：展示文章列表、文章阅读、收藏
 + [个人中心模块]：个人信息、我的故事、我的收藏、关于解忧馆等
-
-
-
-## 界面预览
-
-![](https://636c-cloud1-2g80dbl090309d49-1307246739.tcb.qcloud.la/result-imgs/result01.png)
-
-![](https://636c-cloud1-2g80dbl090309d49-1307246739.tcb.qcloud.la/result-imgs/result02.png)
-
-![](https://636c-cloud1-2g80dbl090309d49-1307246739.tcb.qcloud.la/result-imgs/result03.png)
-
-![](https://636c-cloud1-2g80dbl090309d49-1307246739.tcb.qcloud.la/result-imgs/result04.png)
-
-![](https://636c-cloud1-2g80dbl090309d49-1307246739.tcb.qcloud.la/result-imgs/result05.png)
-
