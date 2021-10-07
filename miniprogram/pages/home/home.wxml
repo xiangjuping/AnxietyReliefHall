@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<form>
+<view class="container">
+    <view class='row' id="textareawrap" catchtap="onFocus">
+        <textarea  fixed="true" class='text' value="{{note.content}}" maxlength="500"  
+        focus='{{focus}}' name="content"   placeholder="请讲述你的故事" 
+        bindblur="bindTextAreaBlur"   />
+    </view>
+
+    <view class='title'>
+        <input name="title" placeholder-class="placeholder" placeholder="请匿名：" value="{{note.title}}" />
+    </view>
+    
+    <van-button color="#F2911B" class="btn" round slot="button" 
+    size="normal" type="primary" form-type="submit">
+        提交
+    </van-button>
+  <van-dialog id="van-dialog" show="{{ show }}" bind:close="onClose"></van-dialog>
+</view>
+</form>
+  

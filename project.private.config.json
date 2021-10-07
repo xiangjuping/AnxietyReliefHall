@@ -1,0 +1,84 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "个人中心",
+          "pathName": "pages/personalCenter/personalCenter",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "更多",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "邮箱",
+          "pathName": "pages/mailBox/mailBox",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "文章阅读",
+          "pathName": "pages/index/read/read",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的收藏",
+          "pathName": "pages/personalCenter/collection/collection",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "问题详情",
+          "pathName": "pages/mailBox/troubleDetail/troubleDetail",
+          "query": "id=2d44d6c261371a120a7a66f307edd090",
+          "scene": null
+        },
+        {
+          "name": "pages/index/assorted/assorted",
+          "pathName": "pages/index/assorted/assorted",
+          "query": "id=14139e12615d6554115b77921ab5962a",
+          "scene": null
+        },
+        {
+          "name": "pages/mailBox/troubleDetail/troubleDetail",
+          "pathName": "pages/mailBox/troubleDetail/troubleDetail",
+          "query": "id=2d44d6c2615af591113724b502556a33",
+          "scene": null
+        },
+        {
+          "name": "收件箱",
+          "pathName": "pages/personalCenter/receive/receive",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/personalCenter/mystory/mystory",
+          "pathName": "pages/personalCenter/mystory/mystory",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/personalCenter/mystory/receive/receive",
+          "pathName": "pages/personalCenter/mystory/receive/receive",
+          "query": "id=2d44d6c2615af591113724b502556a33",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+<view class="container">
+  <view class="header">
+    <van-button plain color="#F2911B" bindtap="buttonTap" wx:if="{{!userInfo}}" class="login_btn">点击授权登录 </van-button>
+    <view class="content" wx:else>
+      <image class="headImg" src="{{userInfo.avatarUrl}}"></image>
+      <text class="nickName">{{userInfo.nickName}}</text>
+    </view>
+
+    <modal title="WELCOM!欢迎来到解忧杂货铺" hidden="{{modalHidden}}" bindconfirm="login" bindcancel="modalCandel">
+      <view>
+        <image class="image" src="https://636c-cloud1-2g80dbl090309d49-1307246739.tcb.qcloud.la/imgs/index1.png" mode='aspectFill'></image>
+      </view>
+      <view class="pop_text">
+        <text>
+          我寄给你的信总要送往邮局
+          不喜欢放在街边的邮箱中
+          我总疑心那里慢一点
+          愿世间所有美好都与你环环相扣
+        </text>
+      </view>
+    </modal>
+  </view>
+
+  <view class="body">
+    <van-cell-group inset wx:if="{{userInfo}}">
+      <van-cell is-link icon="user-o" title="个人信息" link-type="navigateTo"  url="/pages/personalCenter/me/me" />
+      <!-- <van-cell is-link icon="comment-o" title="我的解答" link-type="navigateTo" /> -->
+      <van-cell is-link icon="edit" title="我的故事" link-type="navigateTo" url="/pages/personalCenter/mystory/mystory" />
+      <!-- <van-cell is-link icon="chat-o" title="我的来信" link-type="navigateTo" url="/pages/personalCenter/receive/receive" /> -->
+      <van-cell is-link icon="star-o" title="我的收藏" url="/pages/personalCenter/collection/collection" />
+    </van-cell-group>
+    <van-cell-group inset>
+      <!-- <van-cell is-link icon="setting-o" title="设置" link-type="navigateTo" /> -->
+      <!-- <van-cell is-link icon="question-o" title="需要帮助" link-type="navigateTo" url="/pages/personalCenter/help/help" /> -->
+      <van-cell is-link icon="info-o" title="关于解忧馆" link-type="navigateTo" url="/pages/personalCenter/about/about" />
+      <van-cell icon="share-o" title="分享" bind:click="onClick" />
+      <van-share-sheet show="{{ showShare }}" title="立即分享给好友" options="{{ options }}" bind:select="onSelect"
+        bind:close="onClose" />
+    </van-cell-group>
+    <van-cell-group inset wx:if="{{userInfo}}">
+      <van-cell icon="clear" title="退出登录" bindtap="onClickConfirm" />
+      <van-dialog show="{{ show }}" bind:cancel="onCancel" bindtap="logout" id="van-dialog"></van-dialog>
+    </van-cell-group>
+  </view>
+</view>

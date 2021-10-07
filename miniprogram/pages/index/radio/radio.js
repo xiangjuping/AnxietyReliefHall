@@ -1,0 +1,24 @@
+Page({
+  data:{
+    list:[]
+  },
+  onLoad(){
+    wx.cloud.database().collection('radio')
+    .get()
+    .then(res=>{
+      console.log("请求成功",res)
+      this.setData({
+        list:res.data
+      })
+    })
+    .catch(err=>{
+      console.log("请求失败",err)
+    })
+  },
+  tomusicPage(e){
+  //console.log('点击跳转到详情页的id',e)
+    wx.navigateTo({
+      url: '/pages/index/radio/musicPage/musicPage?id='+ e.currentTarget.dataset.id,
+    })
+  }
+})

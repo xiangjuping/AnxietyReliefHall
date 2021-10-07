@@ -1,0 +1,42 @@
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.header{
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background-color: #F6F6F6;
+}
+.login_btn{
+  margin-top: 180rpx;
+}
+
+.pop_text{
+  font-size: medium;
+  color: #000000;
+  position: relative;
+  text-align: center;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.headImg{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  margin:60rpx auto;
+}
+.nickName{
+  color: #000000;
+  margin-bottom: 20rpx;
+}
+.body{
+  background-color: #F6F6F6;
+}

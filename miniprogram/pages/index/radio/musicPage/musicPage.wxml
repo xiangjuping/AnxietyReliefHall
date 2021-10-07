@@ -1,0 +1,26 @@
+<view class="header">
+  <text class="title">{{text.title}}</text>
+  <text class="author">主播:{{text.author}}</text>
+  <image class="collect" src="{{collectImg}}" bindtap="clickCollect"></image> 
+  <image src="{{text.img}}"></image>
+  <!-- <image src="{{text.img}"/> -->
+</view>
+
+ 
+<view class='audiosBox'>
+    <view class="audioOpen" bindtap="listenerButtonPlay" wx:if="{{!isOpen}}">
+    <image class='image2' src="../../../../images/start.png" />
+</view>
+<view class="audioOpen" bindtap="listenerButtonPause" wx:if="{{isOpen}}">
+  <image class='image2' src="../../../../images/stop.png" />
+</view>
+<view class='slid'>
+  <slider bindchange="sliderChange" block-size="12px" step="2" value="{{offset}}" max="{{max}}"
+    selected-color="#4c9dee" />
+  <view>
+    <text class='times'>{{starttime}}</text> <!-- 进度时长 -->
+
+    <text class='times'>{{duration}}</text> <!-- 总时长 -->
+  </view>
+</view>
+</view>

@@ -1,0 +1,24 @@
+<view class="content">
+  <text class="biaoti">{{text.title}}</text>
+
+  <view class="head">
+    <image class="headimg" src="{{text.img}}"></image>
+    <text class="name">{{text.author}}</text>
+    <image class="collect" src="{{collectImg}}" bindtap="clickCollect"></image> 
+  </view>
+
+  <view class="body">
+    
+    <text class="biaoti_small">{{text.title1}}</text>
+    <view class="neirong">{{text.neirong1}}</view>
+
+    <text class="biaoti_small">{{text.title2}}</text>
+    <view class="neirong">{{text.neirong2}}</view>
+    
+    <text class="biaoti_small">{{text.title3}}</text>
+    <view class="neirong">{{text.neirong3}}</view>
+
+    
+  </view>
+
+</view>

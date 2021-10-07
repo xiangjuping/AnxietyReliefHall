@@ -1,0 +1,30 @@
+.content{
+  border-radius:20rpx;
+  padding: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.biaoti{
+  padding-bottom: 10rpx;
+  display: block;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+.head{
+  margin: 20rpx;
+}
+.headimg{
+  /* border-radius: 50%; */
+  /* height: 300rpx;
+  width: 300rpx; */
+  vertical-align: middle;
+}
+.neirong{
+  font-size: medium;
+  text-align: left;
+  text-indent: 2em;
+  padding-bottom: 20rpx;
+}

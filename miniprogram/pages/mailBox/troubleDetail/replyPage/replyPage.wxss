@@ -1,0 +1,9 @@
+.name{
+  font-size: large;
+  margin: 40rpx;
+}
+.btn{
+  display: block;
+  margin: 40rpx;
+  text-align: right;
+}

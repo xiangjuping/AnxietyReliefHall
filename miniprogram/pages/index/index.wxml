@@ -1,0 +1,42 @@
+<view class="head">
+  <view class="head_list1" bindtap="toRadio">
+    <image class="head_img" src="../../images/listen.png"></image>
+    <text class="head_title">电台</text>
+  </view>
+
+  <view class="head_list2" bindtap="toWrite">
+    <image class="head_img" src="../../images/write.png"></image>
+    <text class="head_title">写故事</text>
+  </view>
+
+  <view></view>
+</view>
+
+<view>
+  <van-tabs active="{{ active }}"  color="#F2911B">
+    
+    <van-tab title="杂七杂八科普">
+      <view wx:for="{{assorted}}" wx:key="index">
+        <view class="read_list" bindtap="toMixed" data-id="{{item._id}}"> 
+          <image class="list_img" src="{{item.img}}"></image>
+          <view class="mix_text">
+            <text>{{item.title}}</text>
+          </view>
+          
+        </view>
+      </view>
+    </van-tab>
+
+    <van-tab title="阅读推荐">
+      <view wx:for="{{read}}" wx:key="index">
+        <view class="read_list" bindtap="toRead" data-id="{{item._id}}"> 
+          <image class="list_img" src="{{item.img}}"></image>
+          <view class="text">
+            <text>{{item.title}}</text>
+            <text class="author">作者:{{item.author}}</text>
+          </view>
+        </view>
+      </view>
+    </van-tab>
+  </van-tabs>
+</view>

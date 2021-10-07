@@ -1,0 +1,23 @@
+.content{
+  display: block;
+  border-radius: 20rpx;
+  border: 3rpx solid #E0E3DA;
+  box-shadow:5rpx 5rpx 5rpx 5rpx #E0E3DA;
+  background-color: #ffffff;
+  margin: 30rpx;
+  padding: 30rpx;
+}
+.header{
+  padding-bottom: 20rpx;
+  text-align: center;
+  color: #F2911B;
+  font-size: large;
+}
+.top{
+  padding-bottom: 20rpx;
+  font-size: small;
+}
+.jieshao{
+  padding-top: 20rpx;
+  font-size: small;
+}

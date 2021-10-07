@@ -1,0 +1,32 @@
+.content{
+  background-color: #fff;
+  margin: 10rpx;
+  border-radius: 20rpx;
+  padding: 30rpx;
+}
+.box{
+  height: 120rpx;
+  margin: 5rpx 0;
+  border-bottom: solid 1rpx gainsboro;
+}
+.tou{
+  display: inline-block;
+  line-height: 120rpx;
+}
+.headimg{
+  border-radius: 50%;
+  height: 80rpx;
+  width: 80rpx;
+  vertical-align: middle;
+}
+.next{
+  height: 50rpx;
+  width: 50rpx;
+  vertical-align: middle;
+  padding-left: 10rpx;
+}
+.right{
+  /* padding-right: 20rpx; */
+  line-height: 120rpx;
+  float: right;
+}

@@ -1,0 +1,18 @@
+<view>
+
+  <view class="content">
+    <image class="img" src="cloud://cloud1-2g80dbl090309d49.636c-cloud1-2g80dbl090309d49-1307246739/imgs/yinhao.png"></image>
+    <view class="detail">{{text.detail}}</view>
+  </view>
+
+  <view class="area">
+    <block wx:for="{{text.reply}}" wx:key="index">
+      <view class="replyitem" bindtap="toCheck">
+        <view>{{text.name}} 收</view>
+        <view class="small_text">{{item.content}}</view>
+        <view class="foot">{{item.name}}</view>
+      </view>
+    </block>
+  </view>
+
+</view>

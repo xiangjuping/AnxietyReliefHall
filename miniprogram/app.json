@@ -1,0 +1,73 @@
+{
+  "pages": [
+    "pages/personalCenter/personalCenter",
+    "pages/personalCenter/me/me",
+    "pages/personalCenter/mystory/mystory",
+    "pages/personalCenter/mystory/receive/receive",
+    "pages/personalCenter/collection/collection",
+    "pages/personalCenter/help/help",
+    "pages/personalCenter/about/about",
+
+    "pages/index/index",
+    "pages/index/radio/radio",
+    "pages/index/radio/musicPage/musicPage",
+    "pages/index/write/write",
+    "pages/index/read/read",
+    "pages/index/assorted/assorted",
+
+    "pages/mailBox/mailBox",
+    "pages/mailBox/troubleDetail/troubleDetail",
+    "pages/mailBox/troubleDetail/replyPage/replyPage"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "解忧馆",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  
+  "tabBar": {
+    "color": "#a1a1a1",
+    "backgroundColor": "#F6F6F6",
+    "selectedColor": "#2E2E2E",
+    "list": [
+      {
+        "pagePath": "pages/mailBox/mailBox",
+        "text": "发现",
+        "iconPath": "./images/mail.png",
+        "selectedIconPath": "./images/mail_1.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "更多",
+        "iconPath": "./images/more.png",
+        "selectedIconPath": "./images/more_1.png"
+      },
+      {
+        "pagePath": "pages/personalCenter/personalCenter",
+        "text": "我的",
+        "iconPath": "./images/me.png",
+        "selectedIconPath": "./images/me_1.png"
+      }
+    ]
+  },
+  "requiredBackgroundModes": ["audio", "location"],
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-share-sheet": "@vant/weapp/share-sheet/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-slider": "@vant/weapp/slider/index",
+    "van-empty": "@vant/weapp/empty/index"
+  }
+}

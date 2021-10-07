@@ -1,0 +1,40 @@
+.content{
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx;
+  background:#EBECF0;
+  border-radius: 30rpx;
+  padding: 20rpx 50rpx;
+}
+.img{
+  height: 30rpx;
+  width: 30rpx;
+  padding-right: 30rpx;
+}
+.detail{
+  font-size: 30rpx;
+  word-break: break-all;
+  margin-top: 10rpx;
+  width: 500rpx;
+  white-space:nowrap;/*超出内容禁止换行*/
+  overflow: hidden;/*超出部分隐藏*/
+  text-overflow: ellipsis;/*文字超出内容用省略号显示*/
+}
+.replyitem{
+  margin: 20rpx;
+  background-color: #fff;
+  padding: 20rpx;
+  border-radius: 30rpx;
+}
+.small_text{
+  text-indent: 40rpx;
+  line-height: 60rpx;
+  padding-top: 20rpx;
+  font-size: 30rpx;
+  word-break: break-all;
+}
+.foot{
+  text-align: right;
+  padding: 20rpx;
+}

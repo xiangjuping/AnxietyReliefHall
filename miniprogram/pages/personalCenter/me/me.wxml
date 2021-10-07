@@ -1,0 +1,25 @@
+<view class="content">
+  <view class="box">
+    <text class="tou">头像</text>
+    <view class="right">
+      <image class="headimg" src="{{userInfo.avatarUrl}}"></image>
+      <!-- <image class="next" src="../../../images/next.png"></image> -->
+    </view>
+    
+  </view>
+
+  <view class="box">
+    <text class="tou">昵称</text>
+    <text class="right">{{userInfo.nickName}}</text>
+  </view>
+
+  <view class="box">
+    <text class="tou">性别</text>
+    <text class="right">{{sex}}</text>
+  </view>
+
+  <view class="box">
+    <text class="tou">所在地</text>
+    <text class="right">{{userInfo.province}}{{userInfo.city}}</text>
+  </view>
+</view>

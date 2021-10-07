@@ -1,0 +1,30 @@
+<view>
+  <view class="name">To: {{huifu.name}}</view>
+  <van-cell-group inset>
+    <van-field 
+    value="{{ message }}" 
+    bind:blur="onMessage"
+    type="textarea" 
+    border="{{ false }}"
+    placeholder="留下温暖回应，让心声得到共鸣" 
+    autosize 
+    custom-style="height:800rpx;font-size:large"  />
+
+    <van-field
+    value="{{ value }}"
+    placeholder="匿名署名 "
+    border="{{ false }}"
+    bind:blur="onChange"
+    />
+  </van-cell-group>
+  
+  <van-button 
+  color="#F2911B" 
+  class="btn" round slot="button" 
+  size="normal" 
+  type="primary" 
+  bindtap="publish">
+    提交
+  </van-button>
+  <van-dialog  id="van-dialog" show="{{ show }}"></van-dialog>
+</view>

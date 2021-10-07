@@ -1,0 +1,15 @@
+<view class="header"> 
+  <image class="emailImg" src="https://636c-cloud1-2g80dbl090309d49-1307246739.tcb.qcloud.la/imgs/email_2.png"></image> 
+  <text class="title">Hello！</text>
+</view>
+
+<view wx:for="{{list}}" wx:key="index">
+  <view class="container" bindtap="toDetail" data-id="{{item._id}}">
+    <image class="headImage" src="{{item.img}}" />  
+    <!-- <image class="headImage" src="../../images/boy1.png" />   -->
+    <view class="text">  
+      <text>{{item.name}}</text>    
+      <view class="text_small">{{item.detail}}</view> 
+    </view>
+  </view>
+</view>

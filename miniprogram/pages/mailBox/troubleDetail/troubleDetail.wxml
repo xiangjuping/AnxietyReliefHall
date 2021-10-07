@@ -1,0 +1,36 @@
+<view>
+  <view class="content">
+    <view class="head">解忧馆 收：</view>
+    <view class="detail">{{text.detail}}</view>
+    <view class="name">
+      <image class="img" src="{{text.img}}" />
+      <!-- <image class="img" src="../../../images/boy1.png" /> -->
+      {{text.name}}
+    </view>
+    <view class="time">
+      {{time}}
+    </view>
+
+    <view class="btn">
+      <!-- <van-button color="#F2911B" class="left" round plain>送个拥抱</van-button> -->
+      <van-button color="#F2911B" class="right" round bindtap="toReply" data-id="{{text._id}}">解答咨询</van-button>
+    </view>
+  </view>
+
+  <view class="area">
+    <view class="tip">
+      <image class="icon" src="../../../images/reply.png"></image>
+      <text>互动解答：</text>
+      <!-- <image src="../../../images/hug.png"></image>
+      <text>获得拥抱</text> -->
+    </view>
+
+    <block wx:for="{{text.reply}}" wx:key="index">
+      <view class="replyitem" bindtap="toCheck">
+        <text>{{item.name}}: </text>
+        <view class="small_text">{{item.content}}</view>
+      </view>
+    </block>
+
+  </view>
+</view>

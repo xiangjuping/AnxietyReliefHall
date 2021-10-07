@@ -1,0 +1,23 @@
+<form>
+<view class="container">
+    <!-- <view class='row' id="textareawrap" catchtap="onFocus"> -->
+    <view class='row' id="textareawrap">
+        <textarea  fixed="true" class='text' value="{{content}}" maxlength="500"  
+        focus='{{focus}}' name="content"   placeholder="请讲述你的故事"
+        bind:blur="onContent" />
+    </view>
+
+    <!-- <view class='title'>
+        <input name="title" placeholder-class="placeholder" placeholder="请署名：" 
+        value="{{name}}"
+        bind:blur="onChange" />
+    </view> -->
+    
+    <van-button color="#F2911B" class="btn" round slot="button" 
+    size="normal" type="primary" bindtap="onClickConfirm" form-type="submit">
+        提交
+    </van-button>
+  <van-dialog  id="van-dialog" show="{{ show }}"></van-dialog>
+</view>
+</form>
+

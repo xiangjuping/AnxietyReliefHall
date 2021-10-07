@@ -1,0 +1,48 @@
+.container {
+  height: 120rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20rpx;
+  border: 3rpx solid #E0E3DA;
+  box-shadow:5rpx 5rpx 5rpx 5rpx #E0E3DA;
+  background-color: #ffffff;
+  margin: 30rpx;
+  /* padding使得文字和图片不至于贴着边框 */
+  padding: 30rpx;
+}
+.empty{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  /* border: 1rpx solid black; */
+  height: 480rpx;
+}
+
+/* 图片 */
+.headImage {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+}
+
+/* 包裹两行文字 */
+.text {
+  width: 100%;
+  margin-left: 25rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 小字 */
+.text_small {
+  font-size: 30rpx;
+  word-break: break-all;
+  color: #7a7878;
+  margin-top: 10rpx;
+  width: 500rpx;
+  white-space:nowrap;/*超出内容禁止换行*/
+  overflow: hidden;/*超出部分隐藏*/
+  text-overflow: ellipsis;/*文字超出内容用省略号显示*/
+}

@@ -1,0 +1,52 @@
+.content{
+  border-radius:20rpx;
+  padding: 30rpx;
+}
+.biaoti{
+  padding-bottom: 10rpx;
+  display: block;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+.biaoti_small{
+  padding: 20rpx 0;
+  display: block;
+  text-align: center;
+  font-size: small;
+  font-weight: bold;
+}
+.head{
+  margin: 20rpx;
+}
+.headimg{
+  /* border: 1px solid #707070; */
+  border-radius: 50%;
+  height: 100rpx;
+  width: 100rpx;
+  vertical-align: middle;
+}
+.name{
+  margin-left: 30rpx;
+  display: inline-block;
+}
+.collect{
+  vertical-align: middle;
+  height: 80rpx;
+  width: 80rpx;
+  float: right;
+}
+.neirong{
+  font-size: small;
+  text-align: left;
+  text-indent: 2em;
+  padding-bottom: 20rpx;
+}
+.list{
+  display: block;
+  text-align: center;
+}
+.more{
+  text-align: left;
+  text-indent: 2em;
+}

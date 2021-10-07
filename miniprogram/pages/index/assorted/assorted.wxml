@@ -1,0 +1,10 @@
+<view class="content">
+
+  <text class="biaoti">{{text.title}}</text>
+
+  <view class="head">
+    <image class="headimg" src="{{text.img}}"></image>
+  </view>
+
+  <view class="neirong">{{text.detail}}</view>
+</view>

@@ -1,0 +1,52 @@
+<view>
+  <van-tabs active="{{ active }}" color="#F2911B">
+
+    <van-tab title="文章">
+      <view class="container">
+        <view class="empty" wx:if="{{length1===0}}">
+          <image src="https://636c-cloud1-2g80dbl090309d49-1307246739.tcb.qcloud.la/imgs/empty.png"></image>
+          <text class="footer">暂无内容</text>
+          <!-- <van-empty class="custom-image" image="https://636c-cloud1-2g80dbl090309d49-1307246739.tcb.qcloud.la/imgs/empty.png" description="暂无内容" /> -->
+        </view>
+
+        <view wx:else>
+          <view wx:for="{{read}}" wx:key="index">
+            <view class="read_list" bindtap="toRead" data-id="{{item._id}}">
+              <image class="list_img" src="{{item.img}}"></image>
+              <view class="text">
+                <text>{{item.title}}</text>
+                <text class="author">作者:{{item.author}}</text>
+              </view>
+            </view>
+          </view>
+          <view class="footer">已全部展示</view>
+        </view>
+      </view>
+    </van-tab>
+
+    <van-tab title="音乐">
+      <view class="container">
+        <view class="empty" wx:if="{{length2===0}}">
+          <image src="https://636c-cloud1-2g80dbl090309d49-1307246739.tcb.qcloud.la/imgs/empty.png"></image>
+          <text class="footer">暂无内容</text>
+        </view>
+
+        <view wx:else>
+          <view wx:for="{{radio}}" wx:key="index">
+            <view class="music_list" bindtap="tomusicPage" data-id="{{item._id}}">
+              <image class="music_img" src="{{item.img}}"></image>
+              <view class="text">
+                <text>{{item.title}}</text>
+                <text class="author">{{item.author}}</text>
+              </view>
+              <image class="icon" src="../../../images/play.png"></image>
+            </view>
+
+          </view>
+          <view class="footer">已全部展示</view>
+        </view>
+      </view>
+    </van-tab>
+
+  </van-tabs>
+</view>
